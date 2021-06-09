@@ -1,7 +1,7 @@
 # Number guessing game 
 
 ## Short description
-Number guessing game is simple game, the rule is from 10 attempts to guess a random number. it is easy to use, without any account.
+Number guessing game is simple game, the rule is from 10 attempts to guess a random number.There is some messages, if the number is less than or greater than the selected number, and also alert messages for the game over or win. It is easy to use, without any account.
 
 # Aplication's main features
 ## Project features:
