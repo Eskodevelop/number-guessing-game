@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(
+      90deg,
+      rgb(231, 228, 228) 0%,
+      rgb(255, 252, 252) 100%
+    );
+    
+}
+.center {
+  display:flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  min-height: 60px;
+  background-color: #fcfcfc;
+position: absolute;
+left: 50%;
+margin-left: -185px;
+top: 50%;
+margin-top: -255px;
+  font-size: 1.3em;
+}
+
+.form-group {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-label {
+  padding-left: 8px;
+  padding-top: 15px;
+}
+
+#btn-left {
+  padding-left: 35px;
+}
+
+hr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.remain, .ups  {
+  margin-left: 33px;
+  margin-right: 30px;
+  font-size: 18px;
+  padding-left: 1px;
+  line-height: 0.8;
+}
+
+.guesses {
+  padding-left: 40px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.newgame {
+  margin-left: 33px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding-left: 1px;
+  line-height: 0.8;
+}
