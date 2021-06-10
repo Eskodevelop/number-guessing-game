@@ -14,6 +14,8 @@ function NumberGusessForm() {
   );
   const [variant, setVariant] = useState("");
 
+  const [disabled, setDisabled] = useState(false)
+
   const handleChange = (e) => {
     e.preventDefault();
     setInput(e.target.value);
@@ -46,6 +48,7 @@ function NumberGusessForm() {
       setMessage("Congratulations! You got it right!");
       setVariant("success");
       setShow(true);
+      setDisabled(true);
     }
     setInput("");
   };
@@ -56,6 +59,7 @@ function NumberGusessForm() {
     setVariant("");
     setNumbers("");
     setShow(false);
+    setDisabled(false);
   };
   const clear = () => {
     setInput("");
@@ -69,10 +73,11 @@ function NumberGusessForm() {
     setVariant("");
     setShow(false);
     setRandomNumber(Math.floor(Math.random() * 100));
+    setDisabled(false);
   };
   return (
     <div className="center">
-      <Card style={{ width: "36rem" }}>
+      <Card>
         <form onSubmit={insertNum} onReset={restart}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Enter a number: </Form.Label>
@@ -83,6 +88,7 @@ function NumberGusessForm() {
               required
               min={0}
               max={100}
+              disabled = {disabled}
             />
           </Form.Group>
           <div className="buttons">
